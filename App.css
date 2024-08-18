@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d1b2a; /* Deep blue background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+}
+
+.App {
+  background-color: rgba(40, 44, 52, 0.85); /* Slightly transparent background */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px; /* Reduced max width */
+  height: auto; /* Let the height be determined by the content */
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically */
+}
+
+/* Logo Styles */
+.logo {
+  width: 80px; /* Smaller logo */
+  margin-bottom: 15px; /* Reduced margin */
+  align-self: center; /* Ensure the logo is centered */
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 15px; /* Reduced margin */
+  font-weight: 700;
+  font-size: 1.8rem; /* Slightly smaller font size */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Make the form take the full width */
+}
+
+/* Input Container */
+.input-container {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* Input Group to include Dollar Sign */
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.dollar-sign {
+  padding: 10px; /* Reduced padding */
+  background-color: #44475a;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid #444;
+  border-right: none;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  border-radius: 0 8px 8px 0;
+  border: 2px solid #444;
+  background-color: #383d48;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #7b2ff7;
+  outline: none;
+}
+
+/* Buttons */
+.submit-btn {
+  background-color: #7b2ff7;
+  color: white;
+  padding: 10px 20px; /* Reduced padding */
+  margin-top: 15px; /* Reduced margin */
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #5c1ab7;
+}
+
+/* Modern Decorative Background Style */
+body::before, body::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid rgba(255, 105, 180, 0.7); /* Neon pink border for circles */
+  z-index: 0;
+}
+
+body::before {
+  width: 250px; /* Adjusted size */
+  height: 250px; /* Adjusted size */
+  top: 15%;
+  left: -10%;
+  background: radial-gradient(circle at center, transparent 40%, rgba(255, 105, 180, 0.3) 60%);
+}
+
+body::after {
+  width: 200px; /* Adjusted size */
+  height: 200px; /* Adjusted size */
+  bottom: 15%;
+  right: -10%;
+  background: radial-gradient(circle at center, transparent 40%, rgba(255, 105, 180, 0.3) 60%);
+}
+
+/* Dots and Lines */
+.dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ff0054;
+  border-radius: 50%;
+}
+
+.dot:nth-child(1) {
+  top: 10%;
+  left: 30%;
+}
+
+.dot:nth-child(2) {
+  top: 40%;
+  right: 20%;
+}
+
+.dot:nth-child(3) {
+  bottom: 20%;
+  left: 40%;
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.line:nth-child(4) {
+  top: 30%;
+  left: 10%;
+  width: 80px;
+}
+
+.line:nth-child(5) {
+  bottom: 40%;
+  right: 25%;
+  width: 120px;
+}
